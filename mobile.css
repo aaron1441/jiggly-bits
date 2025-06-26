@@ -16,13 +16,19 @@
     .intro, .services-home, .company-background, .contact {
         padding: 1rem;
     }
+    .team-member{
+        margin-top: 20px;
+    }
+    .thought-bubble-middle{
+        margin-top: 20px;
+    }
 
-    .thought-bubble-left,
+    /**.thought-bubble-left,
     .thought-bubble-right,
     .thought-bubble-middle {
         position: static;
         width: 90%;
-    }
+    }**/
 }
 
 @media (max-width: 480px) {
