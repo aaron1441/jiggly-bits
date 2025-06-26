@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <title>Jiggly Bits</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+        <main>
+        <header>
+            <h1>Jiggly Bits</h1>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <section class="company-background">
+            
+            <h2>About Jiggly Bits</h2>
+            
+            <p>Our journey began just a year ago with a basic second-hand 3D printer and a
+                passion for creating, given our day-to-day jobs in design. From humble beginnings, we
+                quickly expanded to two &amp; then 3 printers, learning and evolving with each project &amp;
+                upgrade. After selling our first ever printer which did us so proud, we’re now operating at full
+                capacity and experiencing our busiest period yet, starting into our first big contracts. Looking
+                ahead, we aim to grow our brand, expand our services, and scale up to at least eight high
+                speed printers within the next two years, proudly serving the entire Connacht region &amp;
+                across the country also with nationwide postage.</p>
+        </section>
+
+        <section class="team">
+            
+            <h2 class="box">Meet the Team</h2>
+        
+            <div class="team-list">
+                <div class="thought-bubble-left">
+                    One of us thinks PLA smells like popcorn..
+                    <div class="trail-left"></div>
+                </div>
+
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dylan Kelly">
+                    <h3>Dylan Kelly</h3>
+                   
+                </div>
+                
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Evan Fitzmaurice">
+                    <h3>Evan Fitzmaurice</h3>
+                </div>
+                 <div class="thought-bubble-right">
+                    The other thinks it's a lifestyle..
+                    <div class="trail-right"></div>
+                </div>
+                <div class="thought-bubble-middle">
+                    Together, we’ve
+                    turned melted plastic into masterpieces—and survived more filament jams than we’d like to
+                    admit!
+                </div>
+            </div>
+        </section>
+        </main>
+         <footer>
+            <p>Made by Aaron Dee for Jiggly Bits <br>Copyright 2025</p>
+        </footer>
+        <script>
+            // Select all team members
+            const teamMembers = document.querySelectorAll('.team-member');
+        
+            // Create an IntersectionObserver to watch when team members appear in viewport
+            const teamObserver = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    }
+                });
+            }, {
+                threshold: 0.2 // Trigger when 20% visible
+            });
+        
+            // Observe each team member
+            teamMembers.forEach(member => {
+                teamObserver.observe(member);
+            });
+        </script>
+    </div>
+    </body>
+</html>

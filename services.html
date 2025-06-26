@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Jiggly Bits</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+        <main>
+        <header>
+            <h1>Jiggly Bits</h1>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <section class="services">
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Rapid Prototyping</h3>
+                    Fast, accurate prints for product development and testing.
+                </div>
+                <div class="service-item">
+                    <h3>One-Off Custom Prints</h3>
+                    Personalized items made to exact client specs.
+                </div>
+                <div class="service-item">
+                    <h3>Bulk Printing Orders</h3>
+                    High-volume production runs with consistent quality.
+                </div>
+                <div class="service-item">
+                    <h3>Design-to-print Service</h3>
+                    Clients share an idea; we design and print it from scratch.
+                </div>
+                <div class="service-item">
+                    <h3>Reverse Engineering</h3>
+                    Recreate or redesign broken or unavailable parts.
+                </div>
+                <div class="service-item">
+                    <h3>Scaling & Resizing Models</h3>
+                    Adjust models for different scales or use cases.
+                </div>
+                <div class="service-item">
+                    <h3>House & Building Models</h3>
+                    Highly detailed models for real estate, construction, or
+plann               ing.
+                </div>
+                <div class="service-item">
+                    <h3>Scale Minatures</h3>
+                    For presentations, hobbyists, and collectors.
+                </div>
+                <div class="service-item">
+                    <h3>Power Drill Holders</h3>
+                    Wall-mounted or freestanding storage tailored to your tools.
+                </div>
+                <div class="service-item">
+                    <h3>Battery Holders</h3>
+                    Secure and organized mounts for battery packs (Makita, DeWalt, etc.).
+                </div>
+                <div class="service-item">
+                    <h3>Tool Organizers</h3>
+                    Custom holders for bits, blades, sockets, and more.
+                </div>
+                <div class="service-item">
+                    <h3>Workshop Wall Grids</h3>
+                    Modular pegboard-style holders for a clean workspace.
+                </div>
+                <div class="service-item">
+                    <h3>Phone Holders & Stands</h3>
+                    Desk stands, car mounts, or custom setups.
+                </div>
+                <div class="service-item">
+                    <h3>Cable Management</h3>
+                    Clips, organizers, and brackets for tidy setups.
+                </div>
+                <div class="service-item">
+                    <h3>Headphone & Controller Stands</h3>
+                    Custom desk or wall-mounted gear holders.
+                </div>
+                <div class="service-item">
+                    <h3>Mounts for Moniters, Cameras & Tablets</h3>
+                    Custom desk or wall-mounted holders for all devices.
+                </div>
+                <div class="service-item">
+                    <h3>Personalized Gifts</h3>
+                    Names, logos, or messages on products for birthdays, weddings, etc.
+                </div>
+                <div class="service-item">
+                    <h3>Nameplates & Signage</h3>
+                    Custom business signs, desk tags, and branding.
+                </div>
+                <div class="service-item">
+                    <h3>3D Model Design (CAD)</h3>
+                    Professional modelling service from concept to print-ready files.
+                </div>
+                <div class="service-item">
+                    <h3>Material Advice</h3>
+                    Help clients choose between PLA, PETG, ABS, etc., for their specific
+                    eds.
+                </div>
+                <div class="service-item">
+                    <h3>Printability Review</h3>
+                    Assess if a model is suitable for 3D printing and suggest
+                    improvements.
+                </div>
+            </div>
+        </section>
+        </main>
+        <footer>
+            <p>Made by Aaron Dee for Jiggly Bits <br>Copyright 2025</p>
+        </footer>
+
+         <script>
+            // Select all service items
+            const serviceItems = document.querySelectorAll('.service-item');
+        
+            // Create an IntersectionObserver to watch when service items appear in viewport
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // When item is in view, add 'show' class to fade and slide it in
+                        entry.target.classList.add('show');
+                    }
+                });
+            }, {
+                threshold: 0.2 // Trigger when 20% of the item is visible
+            });
+        
+            // Observe each service item
+            serviceItems.forEach(item => {
+                observer.observe(item);
+            });
+
+            
+        </script>
+        </div>    
+    </body>
+</html>
