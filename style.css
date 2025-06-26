@@ -2,10 +2,10 @@ header {
     background-color: #34495e;
     text-align: center;
     margin-bottom: 20px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    padding: 10px;
+    border-radius: 8px;
+    padding: 8px;
     color: white;
+    
 }
 
 .navbar {
@@ -55,6 +55,7 @@ main{
     margin-top: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+
   .hero {
     background-image: url('JigglyBitsLogo.png');
     background-size: cover;
@@ -71,6 +72,10 @@ main{
     animation: fadeIn 2s ease-out; /* Add a fade-in effect */
     margin-bottom: 10px;
     padding-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
 }
 .hero-content {
     display: flex;

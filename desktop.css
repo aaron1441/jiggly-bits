@@ -1,0 +1,26 @@
+/* Desktop-specific styles */
+@media (min-width: 1024px) {
+    /**.service-list-home,
+    .team-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }**/
+
+    /**.service-item-home,
+    .team-member {
+        flex: 1 1 30%;
+        max-width: 30%;
+    }**/    
+
+   /** .wrapper {
+        padding: .5rem;
+    }**/
+
+    .intro, .services-home, .company-background, .contact {
+        padding: 3rem 2rem;
+    }
+
+    .hero-button {
+        width: auto;
+    }
+}
